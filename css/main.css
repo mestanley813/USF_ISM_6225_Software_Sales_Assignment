@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb;
+    color: #2b2a33;
+    font-family: Arial;
+}
+
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navigation li a{
+    margin-right: none;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #2b2a33;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode #navigation li a {
+    color: #f9f9fb;
+}
+
+.dark-mode {
+    background-color: #2b2a33;
+    color: #f9f9fb;
+}
+
+.dark-mode-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dark-mode .dark-mode-toggle img {
+    filter: invert(1);
+}
+
+section {
+    padding: 40px 20px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 45px;
+}
+
+#hero h5 {
+    font-size: 20px;
+}
+
+#chart {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+canvas {
+    background-color: #f9f9fb;
+    width: 100%;
+    height: 500px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#features h2 {
+    font-size: 35px;
+}
+
+.feature {
+    float: left;
+    width: 33.33%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 30px;
+    line-height: 0;
+}
+
+.feature p {
+    font-size: 15px;
+}
+
+.feature img {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+}
+
+.features:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+}

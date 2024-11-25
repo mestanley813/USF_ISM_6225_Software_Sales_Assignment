@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stanley Software Sales</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="managesales.html">Manage Sales</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="ToggleDarkmode()">
+                <img src="img/dark_mode_toggle.svg" alt="Dark Mode Toggle" width="40" height="40">
+            </button>
+        </nav>
+        <hr>
+
+        <div id="chart">
+            <h2>Sales this Year</h2>
+            <canvas id="myChart"></canvas>
+            <p>
+                Our platform is designed to help you as you scale.
+                Businesses using our platform are already experiencing steady increases in sales month over month. 
+                With powerful tools, data-driven insights, and seamless integration, we empower you to unlock new growth opportunities and maximize your sales potential. 
+                Ready to see your numbers climb? Let’s get started today.
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Stanley Software Sales Inc. All right reserved</p>
+        </footer>
+
+        <script src="js/main.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/analytics_line_graph.js"></script>
+    </body>
+</html>

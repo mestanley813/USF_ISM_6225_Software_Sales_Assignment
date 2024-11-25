@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stanley Software Sales</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="managesales.html">Manage Sales</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="ToggleDarkmode()">
+                <img src="img/dark_mode_toggle.svg" alt="Dark Mode Toggle" width="40" height="40">
+            </button>
+        </nav>
+        <hr>
+        <section id="sales">
+            <h2>Manage Sales</h2>
+            <form id="softwareForm">
+                <input type="hidden" id="editIndex" value="">
+                <label for="softwareName">Software Name:</label>
+                <input type="text" id="softwareName" placeholder="Software Name" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" placeholder="Price" required>
+                
+                <label for="licenseType">License Type:</label>
+                <select id="licenseType" required>
+                    <option value="Single-user">Single-user</option>
+                    <option value="Multi-user">Multi-user</option>
+                    <option value="Subscription">Subscription</option>
+                </select>
+                
+                <label for="customerType">Customer Type:</label>
+                <select id="customerType" required>
+                    <option value="Individual">Individual</option>
+                    <option value="Business">Business</option>
+                    <option value="Educational">Educational</option>
+                </select>
+                
+                <button type="submit" class="btn" id="submitBtn">Add Software</button>
+            </form>
+
+            <table id="softwareTable">
+                <thead>
+                    <tr>
+                        <th>Software Name</th>
+                        <th>Price</th>
+                        <th>License Type</th>
+                        <th>Customer Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <p>&copy; 2024 Stanley Software Sales Inc. All right reserved</p>
+        </footer>
+        <script src="js/main.js"></script> 
+        <script src="js/managesales.js"></script>
+    </body>
+</html>

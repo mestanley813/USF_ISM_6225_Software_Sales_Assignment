@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stanley Software Sales</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="managesales.html">Manage Sales</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+            </ul>
+            <button class="dark-mode-toggle" onclick="ToggleDarkmode()">
+                <img src="img/dark_mode_toggle.svg" alt="Dark Mode Toggle" width="40" height="40">
+            </button>
+        </nav>
+        <hr>
+
+        <section id="hero">
+            <h1>Stanley Software Sales</h1>
+            <h2>Streamline Your Sales with Our Powerful Software Tools</h2>
+            <div id="chart">
+                <canvas id="homeChart"></canvas>
+            </div>
+            <h5>Supercharge your business with a powerful, intuitive platform that drives real results.
+                From automated workflows to data-driven insights, Stanley Software Sales helps you close more deals, faster. 
+                Join hundreds of companies already boosting their sales and transforming their growth trajectory.</h5>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <div id="features">
+                <div class="feature">
+                    <h3>Analyze and Optimize</h3>
+                    <p>Gain actionable insights into your sales performance, track key metrics, and make data-driven decisions to drive growth.</p>
+                    <img src="img/analysis.jpg" alt="Computer screen with graphs and charts">
+                </div>
+                <div class="feature">
+                    <h3>Automated Sales Workflows</h3>
+                    <p>Streamline your processes with customizable workflows that reduce manual tasks and ensure no lead is left behind.</p>
+                    <img src="img/workflow.jpg" alt="Computer screen with graphs and charts">
+                </div>
+                <div class="feature">
+                    <h3>Seamless CRM Integration</h3>
+                    <p>Easily connect with your existing CRM system to centralize all customer data, improve team collaboration, and boost efficiency.</p>
+                    <img src="img/crm_integration.jpg" alt="Insights page on tablet">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+
+        <footer>
+            <p>&copy; 2024 Stanley Software Sales Inc. All right reserved</p>
+        </footer>
+
+        <script src="js/main.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/home_chart.js"></script>
+    </body>
+</html>
